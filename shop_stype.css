@@ -1,0 +1,101 @@
+
+/* Левый баннер с ссылками */
+.left-info {
+    margin-top: 100px;
+    height: 5600px;
+    width: 15%;
+    padding-left: 20px;
+    background-color: rgb(224, 186, 139);
+    border-radius: 10px;
+    border: rgb(0, 0, 0);
+    float: left;
+}
+
+.banner {
+    float: left;
+    background-color: rgb(0, 0, 0, 0.1);
+    width: 1000px;
+    height: 500px;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+
+/* Создаю меню сайта */
+
+nav {
+    margin: 0, auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Делаем фон меню с помощью псевдокласса before */
+nav:before{
+    /* Оставляем контент пустым */
+    content: ''; 
+    /* Делаем элемент блочным */
+    display: block;
+    height: 50px;
+    /* Ширина считается по ширине мнитора */
+    width: 100%;
+    background-color: rgb(12, 12, 12);
+    position: absolute;
+    /* Выравниваем по левой стороне */
+    left: 0;
+    /* позиция ниже наших букв */
+    z-index: -1;
+    background-attachment: fixed;
+    
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 50px;
+    background-attachment: fixed;
+}
+.menu_ul li {
+    /* Делаем li плавающими, чтобы расположить по горизонтали */
+    float: left;
+    background-attachment: fixed;
+}
+.menu_ul li a {
+    height: 50px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    /* внутренние отступы по 30 */
+    padding: 0 30px;
+    /* указываем положение строки, вертикально по середине */
+    line-height: 50px;
+    background-attachment: fixed;
+
+}
+.menu_ul li a:hover{
+    background-color: gold;
+    color:rgb(0, 0, 0)
+    
+} 
+
+.Catalog {
+    padding: 0;
+    list-style: none;
+}
+
+.Catalog li{
+    margin-top: 2px;
+    padding-left: 10px;
+    
+}
+/* Фиксация положения меню
+.fixed_nav_bar {   
+    position: fixed;   
+    top: 0;   
+    left: 0;  
+    z-index: 9999;   
+    width: 100%;   
+    height: 50px;   
+    } */
